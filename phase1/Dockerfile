@@ -9,3 +9,8 @@
 # Step 3: Copy in the file or files or folder!
 
 # No need to specify EXPOSE or CMD because they're include in the base (FROM)
+FROM nginx:1.19-alpine
+
+WORKDIR /usr/share/nginx/html
+
+COPY index.html /usr/share/nginx/html
